@@ -12,5 +12,49 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Current Date"
+        android:id="@+id/txtCurrentDate"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Value 1"
+        android:id="@+id/edtNumber1"
+        android:layout_below="@+id/txtCurrentDate"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Value 2"
+        android:ems="10"
+        android:id="@+id/edtNumber2"
+        android:layout_below="@+id/edtNumber1"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/edtNumber1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sum"
+        android:clickable="true"
+        android:onClick="sum"
+        android:id="@+id/btnSum"
+        android:layout_below="@+id/edtNumber2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtResult"
+        android:layout_below="@+id/btnSum"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
